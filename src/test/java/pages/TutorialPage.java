@@ -5,7 +5,7 @@ import tests.AndroidSetUp;
 
 public class TutorialPage {
 
-    MobileElement nextContainer = (MobileElement) AndroidSetUp.getDriver().findElementById("nextContainer");
+    private MobileElement nextContainer = (MobileElement) AndroidSetUp.getDriver().findElementById("nextContainer");
 
     public MainPage skipTutorial() {
             nextContainer.click();

@@ -5,8 +5,8 @@ import tests.AndroidSetUp;
 
 public class MainPage {
 
-    MobileElement searchButton = (MobileElement) AndroidSetUp.getDriver().findElementById("menu_search");
-    MobileElement searchField = (MobileElement) AndroidSetUp.getDriver().findElementById("search_src_text");
+    private MobileElement searchButton = (MobileElement) AndroidSetUp.getDriver().findElementById("menu_search");
+    private MobileElement searchField = (MobileElement) AndroidSetUp.getDriver().findElementById("search_src_text");
 
     public SearchPage performSearch() {
         searchButton.click();

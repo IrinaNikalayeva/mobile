@@ -5,16 +5,15 @@ import tests.AndroidSetUp;
 
 public class ModelPage {
 
-    MobileElement offersButton = (MobileElement) AndroidSetUp.getDriver().findElementById("offersContainer");
-    MobileElement productTitle = (MobileElement) AndroidSetUp.getDriver().findElementById("tv_product_title");
+    private MobileElement offersButton = (MobileElement) AndroidSetUp.getDriver().findElementById("offersContainer");
+    private MobileElement productTitle = (MobileElement) AndroidSetUp.getDriver().findElementById("tv_product_title");
 
     public void skipIntro() {
         offersButton.click();
     }
 
     public boolean isContainsSearchWord() {
-        boolean result = productTitle.getText().contains("Android");
-        return result;
+        return productTitle.getText().contains("Android");
     }
 
 }

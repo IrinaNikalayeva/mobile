@@ -5,7 +5,7 @@ import tests.AndroidSetUp;
 
 public class SearchPage {
 
-    MobileElement firstItem = (MobileElement) AndroidSetUp.getDriver().findElementById("view");
+    private MobileElement firstItem = (MobileElement) AndroidSetUp.getDriver().findElementById("view");
 
     public ModelPage chooseItem() {
         firstItem.click();
