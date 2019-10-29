@@ -12,7 +12,6 @@ import java.net.MalformedURLException;
 
 public class FindModelTest extends AndroidSetUp {
 
-
     @BeforeClass
     public void setUp() throws MalformedURLException {
         prepareAndroidForAppium();
@@ -26,7 +25,7 @@ public class FindModelTest extends AndroidSetUp {
             .chooseItem()
             .skipIntro();
         ModelPage modelPage = new ModelPage();
-        Assert.assertTrue(modelPage.isContainsSearchWord());
+        Assert.assertTrue(modelPage.isContainsSearchWord(ModelPage.SEARCHWORD));
     }
 
     @AfterClass
